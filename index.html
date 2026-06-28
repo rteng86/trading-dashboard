@@ -1,1 +1,66 @@
-init
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta http-equiv="refresh" content="120">
+<title>Trading Bots Dashboard</title><style>*{box-sizing:border-box;margin:0;padding:0}body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:#f5f6fa;color:#1a202c;font-size:14px;padding:14px}
+.header{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:6px;margin-bottom:16px}.header h1{font-size:18px;font-weight:700;display:flex;align-items:center;gap:8px}
+.live-dot{width:9px;height:9px;border-radius:50%;background:#16a34a;display:inline-block}.ts{font-size:11px;color:#718096}
+.summary{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-bottom:14px}@media(min-width:560px){.summary{grid-template-columns:repeat(3,1fr)}}@media(min-width:800px){.summary{grid-template-columns:repeat(6,1fr)}}
+.scard{background:#fff;border:1px solid #e2e8f0;border-radius:10px;padding:12px 14px}.slabel{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:#718096;margin-bottom:5px}.sval{font-size:22px;font-weight:800;line-height:1}.ssub{font-size:11px;color:#718096;margin-top:3px}
+.g{color:#16a34a}.r{color:#dc2626}.b{color:#2563eb}.y{color:#d97706}.m{color:#718096}
+.section{background:#fff;border:1px solid #e2e8f0;border-radius:10px;margin-bottom:12px;overflow:hidden}.sec-head{padding:11px 14px;border-bottom:1px solid #e2e8f0;display:flex;justify-content:space-between;align-items:center}.sec-head h2{font-size:13px;font-weight:700}
+.pill{font-size:10px;font-weight:700;padding:2px 8px;border-radius:20px;background:#eff6ff;color:#2563eb;border:1px solid #bfdbfe}
+.grp{padding:7px 14px;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:#718096;background:#fafafa;border-bottom:1px solid #e2e8f0}
+.row{display:flex;align-items:center;gap:10px;padding:10px 14px;border-bottom:1px solid #e2e8f0}.row:last-child{border-bottom:none}
+.dot{width:8px;height:8px;border-radius:50%;flex-shrink:0}.dot.run{background:#16a34a}.dot.tr{background:#2563eb;box-shadow:0 0 0 3px #eff6ff}
+.info{flex:1;min-width:0}.bn{font-weight:700;font-size:13px}.bm{font-size:11px;color:#718096;margin-top:2px}.right{text-align:right}.bp{font-weight:800;font-size:14px}.bs{font-size:10px;color:#718096}
+.tag{font-size:9px;font-weight:700;padding:1px 6px;border-radius:5px;background:#f0fdf4;color:#16a34a;margin-left:5px}.tag.exp{background:#fffbeb;color:#d97706}
+.posg{display:grid;grid-template-columns:repeat(4,1fr);gap:6px}.pc{background:#f5f6fa;border-radius:6px;padding:5px 7px}.pl{font-size:9px;font-weight:700;text-transform:uppercase;color:#718096}.pv{font-size:12px;font-weight:700;margin-top:2px}
+table{width:100%;border-collapse:collapse;min-width:460px}th{font-size:10px;font-weight:700;text-transform:uppercase;color:#718096;padding:8px 12px;border-bottom:1px solid #e2e8f0;background:#fafafa;text-align:left;white-space:nowrap}td{padding:9px 12px;border-bottom:1px solid #e2e8f0;font-size:12px;white-space:nowrap}.tw{overflow-x:auto}
+.note{background:#eff6ff;border:1px solid #bfdbfe;border-radius:10px;padding:11px 14px;margin-bottom:12px;font-size:12px;color:#1e40af;line-height:1.5}</style></head><body>
+<div class="header"><h1><span class="live-dot"></span> Trading Bots</h1><div class="ts">Snapshot: Jun 28, 2026 · 2:01 PM PDT &nbsp;·&nbsp; 12 bots</div></div>
+<div class="summary">
+<div class="scard"><div class="slabel">Net P&amp;L</div><div class="sval g">+$562.68</div><div class="ssub">+$530.65 closed · +$32.03 open</div></div>
+<div class="scard"><div class="slabel">Closed P&amp;L</div><div class="sval g">+$530.65</div><div class="ssub">19 trades</div></div>
+<div class="scard"><div class="slabel">Open</div><div class="sval b">3</div><div class="ssub">+$32.03</div></div>
+<div class="scard"><div class="slabel">Bots</div><div class="sval">12</div><div class="ssub">8 swing · 3 RSI/JPY</div></div>
+<div class="scard"><div class="slabel">Win Rate</div><div class="sval y">37%</div><div class="ssub">7W · 12L of 19</div></div>
+<div class="scard"><div class="slabel">Updated</div><div class="sval" style="font-size:13px">2:01 PM PDT</div><div class="ssub">auto (launchd)</div></div>
+</div>
+<div class="note"><strong>Changes:</strong> swing bots use $50 take-profit + re-enter · UG_RSI BTC = 1h reversion · USD/JPY = intervention-aware · legacy JPY &amp; 1m clones retired.</div>
+<div class="section"><div class="sec-head"><h2>Bot Status</h2><span class="pill">12 running</span></div>
+<div class="grp">BTC Daily Swing ($50 TP + re-enter)</div>
+<div class="row"><div class="dot run"></div><div class="info"><div class="bn">RT_Swing v1 BTC <span class="tag">proven</span></div><div class="bm">flat</div></div><div class="right"><div class="bp g">+$90.09</div><div class="bs">1 trades</div></div></div>
+<div class="row"><div class="dot run"></div><div class="info"><div class="bn">RT_Swing v2 BTC </div><div class="bm">flat</div></div><div class="right"><div class="bp m">+$0.00</div><div class="bs">0 trades</div></div></div>
+<div class="row"><div class="dot run"></div><div class="info"><div class="bn">RT_Swing v3 BTC <span class="tag">proven</span></div><div class="bm">flat</div></div><div class="right"><div class="bp g">+$90.46</div><div class="bs">1 trades</div></div></div>
+<div class="row"><div class="dot run"></div><div class="info"><div class="bn">RT_Swing v4 BTC </div><div class="bm">flat</div></div><div class="right"><div class="bp m">+$0.00</div><div class="bs">0 trades</div></div></div>
+<div class="row"><div class="dot run"></div><div class="info"><div class="bn">RT_Swing v6 BTC <span class="tag exp">experimental</span></div><div class="bm">flat</div></div><div class="right"><div class="bp m">+$0.00</div><div class="bs">0 trades</div></div></div>
+<div class="grp">BTC 4h Trend-line (experimental)</div>
+<div class="row"><div class="dot tr"></div><div class="info"><div class="bn">RT_Swing v5 BTC <span class="tag exp">experimental</span></div><div class="bm">SHORT @ 60179.1 · live 59398.4</div></div><div class="right"><div class="bp g">+$280.94</div><div class="bs">+$264.98 closed · +$15.96 open</div></div></div>
+<div class="row"><div class="dot tr"></div><div class="info"><div class="bn">RT_Swing v7 BTC <span class="tag exp">experimental</span></div><div class="bm">SHORT @ 60435.1 · live 59565.3</div></div><div class="right"><div class="bp g">+$108.42</div><div class="bs">+$90.00 closed · +$18.42 open</div></div></div>
+<div class="grp">EUR/USD Swing</div>
+<div class="row"><div class="dot tr"></div><div class="info"><div class="bn">RT_Swing v3 EUR <span class="tag">proven</span></div><div class="bm">SHORT @ 1.13794 · live 1.13829</div></div><div class="right"><div class="bp r">-$2.35</div><div class="bs">+$0.00 closed · -$2.35 open</div></div></div>
+<div class="grp">UG_RSI + JPY</div>
+<div class="row"><div class="dot run"></div><div class="info"><div class="bn">UG_RSI BTC <span class="tag">1h reversion</span></div><div class="bm">flat</div></div><div class="right"><div class="bp r">-$2.09</div><div class="bs">11 trades</div></div></div>
+<div class="row"><div class="dot run"></div><div class="info"><div class="bn">UG_RSI EUR <span class="tag exp">15m</span></div><div class="bm">flat</div></div><div class="right"><div class="bp r">-$2.79</div><div class="bs">2 trades</div></div></div>
+<div class="row"><div class="dot run"></div><div class="info"><div class="bn">JPY intervention <span class="tag">new</span></div><div class="bm">flat</div></div><div class="right"><div class="bp m">+$0.00</div><div class="bs">0 trades</div></div></div>
+<div class="grp">Prop (Starter rules)</div>
+<div class="row"><div class="dot run"></div><div class="info"><div class="bn">RT_Prop BTC <span class="tag">prop</span></div><div class="bm">flat</div></div><div class="right"><div class="bp m">+$0.00</div><div class="bs">0 trades</div></div></div>
+</div>
+<div class="section"><div class="sec-head"><h2>Open Positions</h2><span class="pill">3 active · +$32.03</span></div>
+<div class="row" style="display:block"><div style="display:flex;justify-content:space-between;margin-bottom:6px"><div class="bn">RT_Swing v5 BTC <span class="pill" style="background:#fef2f2;color:#dc2626;border-color:#fecaca">SHORT</span></div><div class="bp g">+$15.96</div></div>
+<div class="posg"><div class="pc"><div class="pl">Entry</div><div class="pv">60179.1</div></div><div class="pc"><div class="pl">Live</div><div class="pv">59398.4</div></div><div class="pc"><div class="pl">Stop</div><div class="pv">61873.5166</div></div><div class="pc"><div class="pl">Size</div><div class="pv">0.020448</div></div></div></div>
+<div class="row" style="display:block"><div style="display:flex;justify-content:space-between;margin-bottom:6px"><div class="bn">RT_Swing v7 BTC <span class="pill" style="background:#fef2f2;color:#dc2626;border-color:#fecaca">SHORT</span></div><div class="bp g">+$18.42</div></div>
+<div class="posg"><div class="pc"><div class="pl">Entry</div><div class="pv">60435.1</div></div><div class="pc"><div class="pl">Live</div><div class="pv">59565.3</div></div><div class="pc"><div class="pl">Stop</div><div class="pv">61200.8166</div></div><div class="pc"><div class="pl">Size</div><div class="pv">0.021179</div></div></div></div>
+<div class="row" style="display:block"><div style="display:flex;justify-content:space-between;margin-bottom:6px"><div class="bn">RT_Swing v3 EUR <span class="pill" style="background:#fef2f2;color:#dc2626;border-color:#fecaca">SHORT</span></div><div class="bp r">-$2.35</div></div>
+<div class="posg"><div class="pc"><div class="pl">Entry</div><div class="pv">1.13794</div></div><div class="pc"><div class="pl">Live</div><div class="pv">1.13829</div></div><div class="pc"><div class="pl">Stop</div><div class="pv">1.1528</div></div><div class="pc"><div class="pl">Size</div><div class="pv">6714</div></div></div></div>
+</div>
+<div class="section"><div class="sec-head"><h2>Recent Trades</h2><span class="pill">last 10</span></div><div class="tw"><table><thead><tr><th>Bot</th><th>Dir</th><th>Entry</th><th>Exit</th><th>P&amp;L</th><th>Reason</th><th>Date</th></tr></thead><tbody>
+<tr><td>UG_RSI BTC</td><td class="r" style="font-weight:700">SHORT</td><td>60650.00</td><td>61492.60</td><td class="r" style="font-weight:700">-$0.84</td><td class="m"></td><td class="m">2026-06-25</td></tr>
+<tr><td>UG_RSI BTC</td><td class="r" style="font-weight:700">SHORT</td><td>62504.20</td><td>60586.50</td><td class="g" style="font-weight:700">+$1.92</td><td class="m"></td><td class="m">2026-06-24</td></tr>
+<tr><td>RT_Swing v1 BTC</td><td class="r" style="font-weight:700">SHORT</td><td>65715.10</td><td>60456.90</td><td class="g" style="font-weight:700">+$90.09</td><td class="m">tp_50</td><td class="m">2026-06-24</td></tr>
+<tr><td>RT_Swing v3 BTC</td><td class="r" style="font-weight:700">SHORT</td><td>65715.10</td><td>60435.00</td><td class="g" style="font-weight:700">+$90.46</td><td class="m">tp_50</td><td class="m">2026-06-24</td></tr>
+<tr><td>RT_Swing v7 BTC</td><td class="r" style="font-weight:700">SHORT</td><td>64752.00</td><td>60435.10</td><td class="g" style="font-weight:700">+$90.00</td><td class="m">tp_50</td><td class="m">2026-06-24</td></tr>
+<tr><td>UG_RSI BTC</td><td class="g" style="font-weight:700">LONG</td><td>64658.60</td><td>64115.20</td><td class="r" style="font-weight:700">-$0.54</td><td class="m"></td><td class="m">2026-06-22</td></tr>
+<tr><td>UG_RSI BTC</td><td class="r" style="font-weight:700">SHORT</td><td>63030.30</td><td>63460.90</td><td class="r" style="font-weight:700">-$0.43</td><td class="m"></td><td class="m">2026-06-19</td></tr>
+<tr><td>RT_Swing v5 BTC</td><td class="g" style="font-weight:700">LONG</td><td>62589.20</td><td>62297.90</td><td class="r" style="font-weight:700">-$3.88</td><td class="m">stop/trail</td><td class="m">2026-06-18</td></tr>
+<tr><td>UG_RSI EUR</td><td class="r" style="font-weight:700">SHORT</td><td>1.14645</td><td>1.14838</td><td class="r" style="font-weight:700">-$1.93</td><td class="m"></td><td class="m">2026-06-18</td></tr>
+<tr><td>UG_RSI BTC</td><td class="r" style="font-weight:700">SHORT</td><td>65071.30</td><td>65703.50</td><td class="r" style="font-weight:700">-$0.63</td><td class="m"></td><td class="m">2026-06-17</td></tr>
+</tbody></table></div></div></body></html>
