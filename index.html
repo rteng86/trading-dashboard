@@ -11,24 +11,24 @@
 .row{display:flex;align-items:center;gap:10px;padding:10px 14px;border-bottom:1px solid #e2e8f0}.row:last-child{border-bottom:none}
 .dot{width:8px;height:8px;border-radius:50%;flex-shrink:0}.dot.run{background:#16a34a}.dot.tr{background:#2563eb;box-shadow:0 0 0 3px #eff6ff}
 .info{flex:1;min-width:0}.bn{font-weight:700;font-size:13px}.bm{font-size:11px;color:#718096;margin-top:2px}.right{text-align:right}.bp{font-weight:800;font-size:14px}.bs{font-size:10px;color:#718096}
-.tag{font-size:9px;font-weight:700;padding:1px 6px;border-radius:5px;background:#f0fdf4;color:#16a34a;margin-left:5px}.tag.exp{background:#fffbeb;color:#d97706}
+.tag{font-size:9px;font-weight:700;padding:1px 6px;border-radius:5px;background:#f0fdf4;color:#16a34a;margin-left:5px}.tag.exp{background:#fffbeb;color:#d97706}.tag.off{background:#f1f5f9;color:#64748b}
 .posg{display:grid;grid-template-columns:repeat(4,1fr);gap:6px}.pc{background:#f5f6fa;border-radius:6px;padding:5px 7px}.pl{font-size:9px;font-weight:700;text-transform:uppercase;color:#718096}.pv{font-size:12px;font-weight:700;margin-top:2px}
 table{width:100%;border-collapse:collapse;min-width:460px}th{font-size:10px;font-weight:700;text-transform:uppercase;color:#718096;padding:8px 12px;border-bottom:1px solid #e2e8f0;background:#fafafa;text-align:left;white-space:nowrap}td{padding:9px 12px;border-bottom:1px solid #e2e8f0;font-size:12px;white-space:nowrap}.tw{overflow-x:auto}
 .alert{background:#fef2f2;border:2px solid #dc2626;border-radius:10px;padding:12px 14px;margin-bottom:12px;font-size:13px;color:#991b1b;line-height:1.5;font-weight:600}.alert b{font-size:14px;display:block;margin-bottom:2px}
 .vbadge{font-size:10px;font-weight:800;padding:2px 7px;border-radius:5px}.vok{background:#f0fdf4;color:#16a34a}.vpaper{background:#fffbeb;color:#b45309}.vfail{background:#fef2f2;color:#dc2626}
 .vwarn{background:#fffbeb;border-bottom:1px solid #fde68a;padding:9px 14px;font-size:12px;color:#92400e;font-weight:600}.vfoot{padding:8px 14px;font-size:11px;border-top:1px solid #e2e8f0;line-height:1.5}
 .note{background:#eff6ff;border:1px solid #bfdbfe;border-radius:10px;padding:11px 14px;margin-bottom:12px;font-size:12px;color:#1e40af;line-height:1.5}</style></head><body>
-<div class="header"><h1><span class="live-dot"></span> Trading Bots</h1><div class="ts">Snapshot: Oct 12, 2026 · 10:12 AM PDT &nbsp;·&nbsp; 7 bots</div></div>
+<div class="header"><h1><span class="live-dot"></span> Trading Bots</h1><div class="ts">Snapshot: Oct 12, 2026 · 10:17 AM PDT &nbsp;·&nbsp; 7 bots</div></div>
 
 <div class="summary">
 <div class="scard"><div class="slabel">Net P&amp;L</div><div class="sval g">+$1506.06</div><div class="ssub">+$1539.43 closed · -$33.37 open</div></div>
 <div class="scard"><div class="slabel">Closed P&amp;L</div><div class="sval g">+$1539.43</div><div class="ssub">45 trades</div></div>
 <div class="scard"><div class="slabel">Open</div><div class="sval b">4</div><div class="ssub">-$33.37</div></div>
-<div class="scard"><div class="slabel">Bots</div><div class="sval">7</div><div class="ssub">4 swing · 1 prop · 2 IBKR</div></div>
+<div class="scard"><div class="slabel">Bots</div><div class="sval">7</div><div class="ssub">4 swing · 1 prop · 1 IBKR (MNQ off)</div></div>
 <div class="scard"><div class="slabel">Win Rate</div><div class="sval y">67%</div><div class="ssub">30W · 15L of 45</div></div>
-<div class="scard"><div class="slabel">Updated</div><div class="sval" style="font-size:13px">10:12 AM PDT</div><div class="ssub">auto (launchd)</div></div>
+<div class="scard"><div class="slabel">Updated</div><div class="sval" style="font-size:13px">10:17 AM PDT</div><div class="ssub">auto (launchd)</div></div>
 </div>
-<div class="note"><strong>Latest (Oct 12):</strong> Strategy Validation panel added (random-entry baseline, 2x costs, up/down months, time under water, multiple-testing bar, paper fill log). <strong>Sep 27:</strong> IBKR paper swing bot added (MES/MNQ daily pullback, SPY/QQQ signals, bracket orders, 20-day max hold) · phone push for every open/close/order · alert here + on phone if TWS needs a login.</div>
+<div class="note"><strong>Latest (Oct 12):</strong> PA Swing MNQ turned off (failed validation; MES keeps paper trading). Strategy Validation panel added (random-entry baseline, 2x costs, up/down months, time under water, multiple-testing bar, paper fill log). <strong>Sep 27:</strong> IBKR paper swing bot added (MES/MNQ daily pullback, SPY/QQQ signals, bracket orders, 20-day max hold) · phone push for every open/close/order · alert here + on phone if TWS needs a login.</div>
 <div class="section"><div class="sec-head"><h2>Bot Status</h2><span class="pill">7 running</span></div>
 <div class="grp">BTC 4h Trend-line</div>
 <div class="row"><div class="dot tr"></div><div class="info"><div class="bn">RT_Swing v7 BTC <span class="tag">proven</span></div><div class="bm">LONG @ 82720.5 · live 82473.8</div></div><div class="right"><div class="bp g">+$493.99</div><div class="bs">+$499.49 closed · -$5.50 open</div></div></div>
@@ -40,7 +40,7 @@ table{width:100%;border-collapse:collapse;min-width:460px}th{font-size:10px;font
 <div class="row"><div class="dot run"></div><div class="info"><div class="bn">RT_Prop v2 <span class="tag">v7 · BTC+ETH</span></div><div class="bm">flat</div></div><div class="right"><div class="bp m">+$0.00</div><div class="bs">0 trades</div></div></div>
 <div class="grp">IBKR Paper · Daily Pullback Swing</div>
 <div class="row"><div class="dot run"></div><div class="info"><div class="bn">PA Swing MES <span class="tag exp">paper</span></div><div class="bm">flat</div></div><div class="right"><div class="bp m">+$0.00</div><div class="bs">0 trades</div></div></div>
-<div class="row"><div class="dot run"></div><div class="info"><div class="bn">PA Swing MNQ <span class="tag exp">paper</span></div><div class="bm">flat</div></div><div class="right"><div class="bp m">+$0.00</div><div class="bs">0 trades</div></div></div>
+<div class="row"><div class="dot run"></div><div class="info"><div class="bn">PA Swing MNQ <span class="tag off">off</span></div><div class="bm">flat</div></div><div class="right"><div class="bp m">+$0.00</div><div class="bs">0 trades</div></div></div>
 </div>
 <div class="section"><div class="sec-head"><h2>Open Positions</h2><span class="pill">4 active · -$33.37</span></div>
 <div class="row" style="display:block"><div style="display:flex;justify-content:space-between;margin-bottom:6px"><div class="bn">RT_Swing v7 BTC <span class="pill" style="background:#fef2f2;color:#dc2626;border-color:#fecaca">LONG</span></div><div class="bp r">-$5.50</div></div>
@@ -53,9 +53,7 @@ table{width:100%;border-collapse:collapse;min-width:460px}th{font-size:10px;font
 <div class="posg"><div class="pc"><div class="pl">Entry</div><div class="pv">82991.1</div></div><div class="pc"><div class="pl">Live</div><div class="pv">83675.6</div></div><div class="pc"><div class="pl">Stop</div><div class="pv">79762.1177</div></div><div class="pc"><div class="pl">Size</div><div class="pv">0.031727</div></div></div></div>
 </div>
 <div class="section"><div class="sec-head"><h2>Strategy Validation · pa_swing</h2><span class="pill">12 tests logged · |t| &ge; 2.87 · run 2026-10-12</span></div>
-<div class="vwarn">A live paper bot is trading a setup that fails validation on QQQ. Treat its paper results as a forward test only.</div>
 <div class="tw"><table><thead><tr><th>Mkt</th><th>Setup</th><th>Target</th><th>Trades</th><th>PF</th><th>Random p90</th><th>PF @2x cost</th><th>Avg R up / down mo</th><th>Longest under water</th><th>t</th><th>Verdict</th></tr></thead><tbody>
-<tr><td>QQQ</td><td>3_pullback <span class="tag exp">live</span></td><td class="m">2R_or_swing</td><td>88</td><td>1.327</td><td class="m">1.725</td><td class="g">1.297</td><td>+0.43 / -0.51</td><td>3957d</td><td>1.25</td><td><span class="vbadge vfail">FAIL</span></td></tr>
 <tr><td>SPY</td><td>3_pullback <span class="tag exp">live</span></td><td class="m">2R_or_swing</td><td>123</td><td>1.412</td><td class="m">1.396</td><td class="g">1.364</td><td>+0.36 / -0.21</td><td>3511d</td><td>1.64</td><td><span class="vbadge vpaper">PAPER ONLY</span></td></tr>
 <tr><td>QQQ</td><td>1_breakout</td><td class="m">1R</td><td>16</td><td>0.51</td><td class="m">1.887</td><td class="r">0.503</td><td>+0.02 / -0.54</td><td>7015d</td><td>-1.29</td><td><span class="vbadge vfail">FAIL</span></td></tr>
 <tr><td>SPY</td><td>1_breakout</td><td class="m">1R</td><td>25</td><td>0.573</td><td class="m">1.31</td><td class="r">0.564</td><td>-0.19 / -0.29</td><td>10780d</td><td>-1.35</td><td><span class="vbadge vfail">FAIL</span></td></tr>
@@ -67,6 +65,7 @@ table{width:100%;border-collapse:collapse;min-width:460px}th{font-size:10px;font
 <tr><td>SPY</td><td>2_reversal</td><td class="m">2R_or_swing</td><td>739</td><td>0.799</td><td class="m">1.0</td><td class="r">0.773</td><td>-0.27 / +0.11</td><td>11573d</td><td>-2.89</td><td><span class="vbadge vfail">FAIL</span></td></tr>
 <tr><td>QQQ</td><td>3_pullback</td><td class="m">1R</td><td>106</td><td>0.882</td><td class="m">1.514</td><td class="r">0.855</td><td>+0.09 / -0.55</td><td>9191d</td><td>-0.64</td><td><span class="vbadge vfail">FAIL</span></td></tr>
 <tr><td>SPY</td><td>3_pullback</td><td class="m">1R</td><td>153</td><td>0.959</td><td class="m">1.489</td><td class="r">0.915</td><td>+0.05 / -0.33</td><td>6431d</td><td>-0.25</td><td><span class="vbadge vfail">FAIL</span></td></tr>
+<tr><td>QQQ</td><td>3_pullback</td><td class="m">2R_or_swing</td><td>88</td><td>1.327</td><td class="m">1.725</td><td class="g">1.297</td><td>+0.43 / -0.51</td><td>3957d</td><td>1.25</td><td><span class="vbadge vfail">FAIL</span></td></tr>
 </tbody></table></div>
 <div class="vfoot">Paper fills: none logged yet. Every signal, filled or expired, is recorded from the next one on.</div>
 <div class="vfoot m">FAIL = misses a rule set before testing · PAPER ONLY = passes, but t is below the bar for the number of tests run, so it could be luck · ROBUST = passes everything.</div></div>
