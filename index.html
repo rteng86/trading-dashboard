@@ -18,21 +18,21 @@ table{width:100%;border-collapse:collapse;min-width:460px}th{font-size:10px;font
 .vbadge{font-size:10px;font-weight:800;padding:2px 7px;border-radius:5px}.vok{background:#f0fdf4;color:#16a34a}.vpaper{background:#fffbeb;color:#b45309}.vfail{background:#fef2f2;color:#dc2626}
 .vwarn{background:#fffbeb;border-bottom:1px solid #fde68a;padding:9px 14px;font-size:12px;color:#92400e;font-weight:600}.vfoot{padding:8px 14px;font-size:11px;border-top:1px solid #e2e8f0;line-height:1.5}
 .note{background:#eff6ff;border:1px solid #bfdbfe;border-radius:10px;padding:11px 14px;margin-bottom:12px;font-size:12px;color:#1e40af;line-height:1.5}</style></head><body>
-<div class="header"><h1><span class="live-dot"></span> Trading Bots</h1><div class="ts">Snapshot: Oct 16, 2026 · 8:51 PM PDT &nbsp;·&nbsp; 7 bots</div></div>
-<div class="alert"><b>IBKR needs attention</b>Log in to TWS (paper account). Disconnected since Thu Oct 15 12:55 PM. The swing bot can't place new orders until you log back in; stops and targets already at IBKR stay active.</div>
+<div class="header"><h1><span class="live-dot"></span> Trading Bots</h1><div class="ts">Snapshot: Oct 17, 2026 · 8:41 AM PDT &nbsp;·&nbsp; 7 bots</div></div>
+<div class="alert"><b>IBKR needs attention</b>IBKR swing bot is not running (last heartbeat Sat Oct 17 2:21 AM). Restart it: launchctl load ~/Library/LaunchAgents/com.rt.bot.rtpaswingibkr.plist</div>
 <div class="summary">
-<div class="scard"><div class="slabel">Net P&amp;L</div><div class="sval g">+$1332.22</div><div class="ssub">+$1486.83 closed · -$154.61 open</div></div>
+<div class="scard"><div class="slabel">Net P&amp;L</div><div class="sval g">+$1333.96</div><div class="ssub">+$1486.83 closed · -$152.87 open</div></div>
 <div class="scard"><div class="slabel">Closed P&amp;L</div><div class="sval g">+$1486.83</div><div class="ssub">48 trades</div></div>
-<div class="scard"><div class="slabel">Open</div><div class="sval b">3</div><div class="ssub">-$154.61</div></div>
+<div class="scard"><div class="slabel">Open</div><div class="sval b">3</div><div class="ssub">-$152.87</div></div>
 <div class="scard"><div class="slabel">Bots</div><div class="sval">7</div><div class="ssub">4 swing · 1 prop · 1 IBKR (MNQ off)</div></div>
 <div class="scard"><div class="slabel">Win Rate</div><div class="sval y">62%</div><div class="ssub">30W · 18L of 48</div></div>
-<div class="scard"><div class="slabel">Updated</div><div class="sval" style="font-size:13px">8:51 PM PDT</div><div class="ssub">auto (launchd)</div></div>
+<div class="scard"><div class="slabel">Updated</div><div class="sval" style="font-size:13px">8:41 AM PDT</div><div class="ssub">auto (launchd)</div></div>
 </div>
 <div class="note"><strong>Latest (Oct 12):</strong> PA Swing MNQ turned off (failed validation; MES keeps paper trading). Strategy Validation panel added (random-entry baseline, 2x costs, up/down months, time under water, multiple-testing bar, paper fill log). <strong>Sep 27:</strong> IBKR paper swing bot added (MES/MNQ daily pullback, SPY/QQQ signals, bracket orders, 20-day max hold) · phone push for every open/close/order · alert here + on phone if TWS needs a login.</div>
 <div class="section"><div class="sec-head"><h2>Bot Status</h2><span class="pill">7 running</span></div>
 <div class="grp">BTC 4h Trend-line</div>
 <div class="row"><div class="dot run"></div><div class="info"><div class="bn">RT_Swing v7 BTC <span class="tag">proven</span></div><div class="bm">flat</div></div><div class="right"><div class="bp g">+$479.37</div><div class="bs">16 trades</div></div></div>
-<div class="row"><div class="dot tr"></div><div class="info"><div class="bn">RT_Swing v5 BTC <span class="tag">proven</span></div><div class="bm">SHORT @ 80828.2 · live 81500.8</div></div><div class="right"><div class="bp g">+$428.91</div><div class="bs">+$452.79 closed · -$23.88 open</div></div></div>
+<div class="row"><div class="dot tr"></div><div class="info"><div class="bn">RT_Swing v5 BTC <span class="tag">proven</span></div><div class="bm">SHORT @ 80828.2 · live 81451.7</div></div><div class="right"><div class="bp g">+$430.65</div><div class="bs">+$452.79 closed · -$22.14 open</div></div></div>
 <div class="grp">BTC Daily Swing ($50 TP + re-enter)</div>
 <div class="row"><div class="dot tr"></div><div class="info"><div class="bn">RT_Swing v1 BTC <span class="tag">proven</span></div><div class="bm">LONG @ 86593.8 · live 81500.8</div></div><div class="right"><div class="bp g">+$232.86</div><div class="bs">+$316.31 closed · -$83.45 open</div></div></div>
 <div class="row"><div class="dot tr"></div><div class="info"><div class="bn">RT_Swing v6 BTC <span class="tag exp">experimental</span></div><div class="bm">LONG @ 82991.1 · live 81500.8</div></div><div class="right"><div class="bp g">+$197.44</div><div class="bs">+$244.72 closed · -$47.28 open</div></div></div>
@@ -42,9 +42,9 @@ table{width:100%;border-collapse:collapse;min-width:460px}th{font-size:10px;font
 <div class="row"><div class="dot run"></div><div class="info"><div class="bn">PA Swing MES <span class="tag exp">paper</span></div><div class="bm">flat</div></div><div class="right"><div class="bp m">+$0.00</div><div class="bs">0 trades</div></div></div>
 <div class="row"><div class="dot run"></div><div class="info"><div class="bn">PA Swing MNQ <span class="tag off">off</span></div><div class="bm">flat</div></div><div class="right"><div class="bp m">+$0.00</div><div class="bs">0 trades</div></div></div>
 </div>
-<div class="section"><div class="sec-head"><h2>Open Positions</h2><span class="pill">3 active · -$154.61</span></div>
-<div class="row" style="display:block"><div style="display:flex;justify-content:space-between;margin-bottom:6px"><div class="bn">RT_Swing v5 BTC <span class="pill" style="background:#fef2f2;color:#dc2626;border-color:#fecaca">SHORT</span></div><div class="bp r">-$23.88</div></div>
-<div class="posg"><div class="pc"><div class="pl">Entry</div><div class="pv">80828.2</div></div><div class="pc"><div class="pl">Live</div><div class="pv">81500.8</div></div><div class="pc"><div class="pl">Stop</div><div class="pv">83560.7346</div></div><div class="pc"><div class="pl">Size</div><div class="pv">0.03551</div></div></div></div>
+<div class="section"><div class="sec-head"><h2>Open Positions</h2><span class="pill">3 active · -$152.87</span></div>
+<div class="row" style="display:block"><div style="display:flex;justify-content:space-between;margin-bottom:6px"><div class="bn">RT_Swing v5 BTC <span class="pill" style="background:#fef2f2;color:#dc2626;border-color:#fecaca">SHORT</span></div><div class="bp r">-$22.14</div></div>
+<div class="posg"><div class="pc"><div class="pl">Entry</div><div class="pv">80828.2</div></div><div class="pc"><div class="pl">Live</div><div class="pv">81451.7</div></div><div class="pc"><div class="pl">Stop</div><div class="pv">83560.7346</div></div><div class="pc"><div class="pl">Size</div><div class="pv">0.03551</div></div></div></div>
 <div class="row" style="display:block"><div style="display:flex;justify-content:space-between;margin-bottom:6px"><div class="bn">RT_Swing v1 BTC <span class="pill" style="background:#fef2f2;color:#dc2626;border-color:#fecaca">LONG</span></div><div class="bp r">-$83.45</div></div>
 <div class="posg"><div class="pc"><div class="pl">Entry</div><div class="pv">86593.8</div></div><div class="pc"><div class="pl">Live</div><div class="pv">81500.8</div></div><div class="pc"><div class="pl">Stop</div><div class="pv">80297.9036</div></div><div class="pc"><div class="pl">Size</div><div class="pv">0.016386</div></div></div></div>
 <div class="row" style="display:block"><div style="display:flex;justify-content:space-between;margin-bottom:6px"><div class="bn">RT_Swing v6 BTC <span class="pill" style="background:#fef2f2;color:#dc2626;border-color:#fecaca">LONG</span></div><div class="bp r">-$47.28</div></div>
