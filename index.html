@@ -1,5 +1,5 @@
 <!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"><meta http-equiv="Pragma" content="no-cache"><meta http-equiv="Expires" content="0"><script>setTimeout(function(){location.replace(location.pathname+'?t='+Date.now());},120000);</script>
-<title>Trading Bots Dashboard</title><style>*{box-sizing:border-box;margin:0;padding:0}body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:#f5f6fa;color:#1a202c;font-size:14px;padding:14px}
+<title>ACTION NEEDED - Trading Bots Dashboard</title><style>*{box-sizing:border-box;margin:0;padding:0}body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:#f5f6fa;color:#1a202c;font-size:14px;padding:14px}
 .header{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:6px;margin-bottom:16px}.header h1{font-size:18px;font-weight:700;display:flex;align-items:center;gap:8px}
 .live-dot{width:9px;height:9px;border-radius:50%;background:#16a34a;display:inline-block}.ts{font-size:11px;color:#718096}
 .summary{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-bottom:14px}@media(min-width:560px){.summary{grid-template-columns:repeat(3,1fr)}}@media(min-width:800px){.summary{grid-template-columns:repeat(6,1fr)}}
@@ -18,15 +18,15 @@ table{width:100%;border-collapse:collapse;min-width:460px}th{font-size:10px;font
 .vbadge{font-size:10px;font-weight:800;padding:2px 7px;border-radius:5px}.vok{background:#f0fdf4;color:#16a34a}.vpaper{background:#fffbeb;color:#b45309}.vfail{background:#fef2f2;color:#dc2626}
 .vwarn{background:#fffbeb;border-bottom:1px solid #fde68a;padding:9px 14px;font-size:12px;color:#92400e;font-weight:600}.vfoot{padding:8px 14px;font-size:11px;border-top:1px solid #e2e8f0;line-height:1.5}
 .note{background:#eff6ff;border:1px solid #bfdbfe;border-radius:10px;padding:11px 14px;margin-bottom:12px;font-size:12px;color:#1e40af;line-height:1.5}</style></head><body>
-<div class="header"><h1><span class="live-dot"></span> Trading Bots</h1><div class="ts">Snapshot: Oct 22, 2026 · 10:02 AM PDT &nbsp;·&nbsp; 7 bots</div></div>
-
+<div class="header"><h1><span class="live-dot"></span> Trading Bots</h1><div class="ts">Snapshot: Oct 22, 2026 · 12:29 PM PDT &nbsp;·&nbsp; 7 bots</div></div>
+<div class="alert"><b>IBKR needs attention</b>IBKR swing bot is not running (last heartbeat Thu Oct 22 11:53 AM). Restart it: launchctl load ~/Library/LaunchAgents/com.rt.bot.rtpaswingibkr.plist</div>
 <div class="summary">
 <div class="scard"><div class="slabel">Net P&amp;L</div><div class="sval g">+$1391.69</div><div class="ssub">+$1396.58 closed · -$4.89 open</div></div>
 <div class="scard"><div class="slabel">Closed P&amp;L</div><div class="sval g">+$1396.58</div><div class="ssub">52 trades</div></div>
 <div class="scard"><div class="slabel">Open</div><div class="sval b">3</div><div class="ssub">-$4.89</div></div>
 <div class="scard"><div class="slabel">Bots</div><div class="sval">7</div><div class="ssub">4 swing · 1 prop · 1 IBKR (MNQ off)</div></div>
 <div class="scard"><div class="slabel">Win Rate</div><div class="sval y">60%</div><div class="ssub">31W · 21L of 52</div></div>
-<div class="scard"><div class="slabel">Updated</div><div class="sval" style="font-size:13px">10:02 AM PDT</div><div class="ssub">auto (launchd)</div></div>
+<div class="scard"><div class="slabel">Updated</div><div class="sval" style="font-size:13px">12:29 PM PDT</div><div class="ssub">auto (launchd)</div></div>
 </div>
 <div class="note"><strong>Latest (Oct 12):</strong> PA Swing MNQ turned off (failed validation; MES keeps paper trading). Strategy Validation panel added (random-entry baseline, 2x costs, up/down months, time under water, multiple-testing bar, paper fill log). <strong>Sep 27:</strong> IBKR paper swing bot added (MES/MNQ daily pullback, SPY/QQQ signals, bracket orders, 20-day max hold) · phone push for every open/close/order · alert here + on phone if TWS needs a login.</div>
 <div class="section"><div class="sec-head"><h2>Bot Status</h2><span class="pill">7 running</span></div>
