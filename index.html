@@ -1,5 +1,5 @@
 <!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"><meta http-equiv="Pragma" content="no-cache"><meta http-equiv="Expires" content="0"><script>setTimeout(function(){location.replace(location.pathname+'?t='+Date.now());},120000);</script>
-<title>Trading Bots Dashboard</title><style>*{box-sizing:border-box;margin:0;padding:0}body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:#f5f6fa;color:#1a202c;font-size:14px;padding:14px}
+<title>ACTION NEEDED - Trading Bots Dashboard</title><style>*{box-sizing:border-box;margin:0;padding:0}body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:#f5f6fa;color:#1a202c;font-size:14px;padding:14px}
 .header{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:6px;margin-bottom:16px}.header h1{font-size:18px;font-weight:700;display:flex;align-items:center;gap:8px}
 .live-dot{width:9px;height:9px;border-radius:50%;background:#16a34a;display:inline-block}.ts{font-size:11px;color:#718096}
 .summary{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-bottom:14px}@media(min-width:560px){.summary{grid-template-columns:repeat(3,1fr)}}@media(min-width:800px){.summary{grid-template-columns:repeat(6,1fr)}}
@@ -18,21 +18,21 @@ table{width:100%;border-collapse:collapse;min-width:460px}th{font-size:10px;font
 .vbadge{font-size:10px;font-weight:800;padding:2px 7px;border-radius:5px}.vok{background:#f0fdf4;color:#16a34a}.vpaper{background:#fffbeb;color:#b45309}.vfail{background:#fef2f2;color:#dc2626}
 .vwarn{background:#fffbeb;border-bottom:1px solid #fde68a;padding:9px 14px;font-size:12px;color:#92400e;font-weight:600}.vfoot{padding:8px 14px;font-size:11px;border-top:1px solid #e2e8f0;line-height:1.5}
 .note{background:#eff6ff;border:1px solid #bfdbfe;border-radius:10px;padding:11px 14px;margin-bottom:12px;font-size:12px;color:#1e40af;line-height:1.5}</style></head><body>
-<div class="header"><h1><span class="live-dot"></span> Trading Bots</h1><div class="ts">Snapshot: Oct 22, 2026 · 3:24 AM PDT &nbsp;·&nbsp; 7 bots</div></div>
-
+<div class="header"><h1><span class="live-dot"></span> Trading Bots</h1><div class="ts">Snapshot: Oct 22, 2026 · 7:36 AM PDT &nbsp;·&nbsp; 7 bots</div></div>
+<div class="alert"><b>IBKR needs attention</b>IBKR swing bot is not running (last heartbeat Thu Oct 22 7:15 AM). Restart it: launchctl load ~/Library/LaunchAgents/com.rt.bot.rtpaswingibkr.plist</div>
 <div class="summary">
 <div class="scard"><div class="slabel">Net P&amp;L</div><div class="sval g">+$1387.17</div><div class="ssub">+$1396.58 closed · -$9.41 open</div></div>
 <div class="scard"><div class="slabel">Closed P&amp;L</div><div class="sval g">+$1396.58</div><div class="ssub">52 trades</div></div>
-<div class="scard"><div class="slabel">Open</div><div class="sval b">2</div><div class="ssub">-$9.41</div></div>
+<div class="scard"><div class="slabel">Open</div><div class="sval b">3</div><div class="ssub">-$9.41</div></div>
 <div class="scard"><div class="slabel">Bots</div><div class="sval">7</div><div class="ssub">4 swing · 1 prop · 1 IBKR (MNQ off)</div></div>
 <div class="scard"><div class="slabel">Win Rate</div><div class="sval y">60%</div><div class="ssub">31W · 21L of 52</div></div>
-<div class="scard"><div class="slabel">Updated</div><div class="sval" style="font-size:13px">3:24 AM PDT</div><div class="ssub">auto (launchd)</div></div>
+<div class="scard"><div class="slabel">Updated</div><div class="sval" style="font-size:13px">7:36 AM PDT</div><div class="ssub">auto (launchd)</div></div>
 </div>
 <div class="note"><strong>Latest (Oct 12):</strong> PA Swing MNQ turned off (failed validation; MES keeps paper trading). Strategy Validation panel added (random-entry baseline, 2x costs, up/down months, time under water, multiple-testing bar, paper fill log). <strong>Sep 27:</strong> IBKR paper swing bot added (MES/MNQ daily pullback, SPY/QQQ signals, bracket orders, 20-day max hold) · phone push for every open/close/order · alert here + on phone if TWS needs a login.</div>
 <div class="section"><div class="sec-head"><h2>Bot Status</h2><span class="pill">7 running</span></div>
 <div class="grp">BTC 4h Trend-line</div>
 <div class="row"><div class="dot run"></div><div class="info"><div class="bn">RT_Swing v7 BTC <span class="tag">proven</span></div><div class="bm">flat</div></div><div class="right"><div class="bp g">+$568.72</div><div class="bs">17 trades</div></div></div>
-<div class="row"><div class="dot run"></div><div class="info"><div class="bn">RT_Swing v5 BTC <span class="tag">proven</span></div><div class="bm">flat</div></div><div class="right"><div class="bp g">+$339.36</div><div class="bs">24 trades</div></div></div>
+<div class="row"><div class="dot tr"></div><div class="info"><div class="bn">RT_Swing v5 BTC <span class="tag">proven</span></div><div class="bm">SHORT @ 81658.0 · live 81658.0</div></div><div class="right"><div class="bp g">+$339.36</div><div class="bs">+$339.36 closed · +$0.00 open</div></div></div>
 <div class="grp">BTC Daily Swing ($50 TP + re-enter)</div>
 <div class="row"><div class="dot tr"></div><div class="info"><div class="bn">RT_Swing v1 BTC <span class="tag">proven</span></div><div class="bm">LONG @ 86593.8 · live 84022.5</div></div><div class="right"><div class="bp g">+$274.18</div><div class="bs">+$316.31 closed · -$42.13 open</div></div></div>
 <div class="row"><div class="dot tr"></div><div class="info"><div class="bn">RT_Swing v6 BTC <span class="tag exp">experimental</span></div><div class="bm">LONG @ 82991.1 · live 84022.5</div></div><div class="right"><div class="bp g">+$277.44</div><div class="bs">+$244.72 closed · +$32.72 open</div></div></div>
@@ -42,7 +42,9 @@ table{width:100%;border-collapse:collapse;min-width:460px}th{font-size:10px;font
 <div class="row"><div class="dot run"></div><div class="info"><div class="bn">PA Swing MES <span class="tag exp">paper</span></div><div class="bm">flat</div></div><div class="right"><div class="bp m">+$0.00</div><div class="bs">0 trades</div></div></div>
 <div class="row"><div class="dot run"></div><div class="info"><div class="bn">PA Swing MNQ <span class="tag off">off</span></div><div class="bm">flat</div></div><div class="right"><div class="bp m">+$0.00</div><div class="bs">0 trades</div></div></div>
 </div>
-<div class="section"><div class="sec-head"><h2>Open Positions</h2><span class="pill">2 active · -$9.41</span></div>
+<div class="section"><div class="sec-head"><h2>Open Positions</h2><span class="pill">3 active · -$9.41</span></div>
+<div class="row" style="display:block"><div style="display:flex;justify-content:space-between;margin-bottom:6px"><div class="bn">RT_Swing v5 BTC <span class="pill" style="background:#fef2f2;color:#dc2626;border-color:#fecaca">SHORT</span></div><div class="bp m">+$0.00</div></div>
+<div class="posg"><div class="pc"><div class="pl">Entry</div><div class="pv">81658.0</div></div><div class="pc"><div class="pl">Live</div><div class="pv">81658.0</div></div><div class="pc"><div class="pl">Stop</div><div class="pv">83406.2353</div></div><div class="pc"><div class="pl">Size</div><div class="pv">0.059142</div></div></div></div>
 <div class="row" style="display:block"><div style="display:flex;justify-content:space-between;margin-bottom:6px"><div class="bn">RT_Swing v1 BTC <span class="pill" style="background:#fef2f2;color:#dc2626;border-color:#fecaca">LONG</span></div><div class="bp r">-$42.13</div></div>
 <div class="posg"><div class="pc"><div class="pl">Entry</div><div class="pv">86593.8</div></div><div class="pc"><div class="pl">Live</div><div class="pv">84022.5</div></div><div class="pc"><div class="pl">Stop</div><div class="pv">80297.9036</div></div><div class="pc"><div class="pl">Size</div><div class="pv">0.016386</div></div></div></div>
 <div class="row" style="display:block"><div style="display:flex;justify-content:space-between;margin-bottom:6px"><div class="bn">RT_Swing v6 BTC <span class="pill" style="background:#fef2f2;color:#dc2626;border-color:#fecaca">LONG</span></div><div class="bp g">+$32.72</div></div>
